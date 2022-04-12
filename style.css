@@ -234,6 +234,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    padding: 2.5vw 0;
 }
 
 .info-wrapper {
@@ -269,9 +271,30 @@ body {
 }
 
 /* Quote content */
-.section03 .content {
+.section03 {
     display: flex;
     justify-content: center;
+}
+
+.section03 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 2.5vw 0;
+}
+
+.quote-wrapper {
+    display: flex;
+
+    flex-direction: column;
+    gap: 1.5vw;
+}
+
+.signature-wrapper {
+    display: flex;
+
+    flex-direction: row-reverse;
 }
 
 /* Call to action content */
@@ -299,10 +322,6 @@ body {
     /* align-items: center; */
 }
 
-/* .call-to-action-wrapper .header {
-    font-size
-} */
-
 .call-to-action-wrapper .button-wrapper {
     display: flex;
 
@@ -319,5 +338,9 @@ body {
 }
 
 .footer {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100px;
 }

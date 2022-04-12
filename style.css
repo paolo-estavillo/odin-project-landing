@@ -226,7 +226,7 @@ body {
 /* Information section */
 .section02 {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: row;
     justify-content: center;
     /* align-items: center; */
 }
@@ -249,9 +249,10 @@ body {
     text-align: center;
 }
 
-.cards {
+.info-wrapper .cards {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 2vw;
 }
 

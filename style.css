@@ -15,6 +15,7 @@ body {
     color: #f9faf8;
     font-size: 48px;
     font-weight: bolder;
+    font-family: 'Roboto';
 }
 
 .header-links li a,
@@ -22,16 +23,19 @@ body {
     font-size: 18px;
     color: #e5e7eb;
     text-decoration: none;
+    font-family: 'Roboto';
 }
 
 .hero-image {
     background-color: gray;
+    font-family: "Roboto";
 }
 
 .header-logo {
     font-size: 24px;
     color: #f9faf8;
     font-weight: bold;
+    font-family: 'Roboto';
 }
 
 /* buttons */
@@ -45,6 +49,7 @@ body {
     color: #1f2937;
     font-size: 36px;
     font-weight: bolder;
+    font-family: 'Roboto';
 }
 
 .cards {
@@ -58,9 +63,10 @@ body {
     border-radius: 8px;
 }
 
-.info-wrapper .cards .card .subtext{
+.card .subtext {
     color: #1f2937;
     font-size: 18px;
+    font-family: 'Roboto';
 }
 
 /* quote section */
@@ -73,11 +79,13 @@ body {
     font-size: 36px;
     font-style: italic;
     font-weight: lighter;
+    font-family: 'Roboto';
 }
 
 .signature {
     font-size: 18px;
     font-weight: bold;
+    font-family: 'Roboto';
 }
 
 /* call to action */
@@ -95,20 +103,28 @@ body {
 
 /* Structure */
 .container {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh;
     /* min-width: 100vh; */
 }
 /* Header */
 .header-wrapper {
     display: flex;
+    flex-direction: row;
+    /* flex: auto; */
 
     justify-content: space-between;
+    align-items: center;
+
+    padding: 0 128px;
 }
 
 .header-links {
     display: flex;
+    flex-direction: row;
     list-style-type: none;
+
+    gap: 16px;
 }

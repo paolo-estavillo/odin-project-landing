@@ -1,0 +1,101 @@
+body {
+    min-height: 100vh;
+}
+
+/* -------- Colors and font styles -------- */
+/* hero */
+.header-wrapper,
+.hero-wrapper,
+.footer {
+    background-color: #1f2937;
+}
+
+.hero-main {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.header-links li a,
+.hero-secondary {
+    font-size: 18px;
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+.hero-image {
+    background-color: gray;
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: bold;
+}
+
+/* buttons */
+.sign-up {
+    background-color: #3882f6;
+    border-radius: 4px;
+}
+
+/* information section */
+.info-wrapper .header {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.info-wrapper .cards .card .image-placeholder{
+    border: 4px solid #3882f6;
+    border-radius: 8px;
+}
+
+.info-wrapper .cards .card .subtext{
+    color: #1f2937;
+    font-size: 18px;
+}
+
+
+/* quote section */
+.quote-wrapper {
+    background-color: #e5e7eb;
+}
+
+.quote-wrapper .quote{
+    color: #1f2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.signature {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* call to action */
+.call-to-action-wrapper .content {
+    background-color: #3882f6;
+}
+
+.call-to-action-wrapper .content .sign-up,
+.call-to-action-wrapper .content .header,
+.call-to-action-wrapper .content .subtext,
+.hero-wrapper .hero-image,
+.footer {
+    color: #f9faf8;
+}
+
+/* Structure */
+
+.header-wrapper {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.header-links {
+    display: flex;
+    list-style-type: none;
+}

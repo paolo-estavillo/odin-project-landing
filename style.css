@@ -5,8 +5,7 @@ body {
 
 /* -------- Colors and font styles -------- */
 /* hero */
-.header-wrapper,
-.hero-wrapper,
+.section01,
 .footer {
     background-color: #1f2937;
 }
@@ -27,8 +26,10 @@ body {
 }
 
 .hero-image {
-    background-color: gray;
+    /* background-color: gray; */
     font-family: "Roboto";
+    /* height: 100px;
+    width: 200px; */
 }
 
 .header-logo {
@@ -70,7 +71,7 @@ body {
 }
 
 /* quote section */
-.quote-wrapper {
+.section03 {
     background-color: #e5e7eb;
 }
 
@@ -89,16 +90,21 @@ body {
 }
 
 /* call to action */
-.call-to-action-wrapper .content {
+.call-to-action-wrapper {
     background-color: #3882f6;
 }
 
-.call-to-action-wrapper .content .sign-up,
-.call-to-action-wrapper .content .header,
-.call-to-action-wrapper .content .subtext,
+.call-to-action-wrapper .sign-up,
+.call-to-action-wrapper .header,
+.call-to-action-wrapper .subtext,
 .hero-wrapper .hero-image,
 .footer {
     color: #f9faf8;
+    font-family: "Roboto";
+}
+
+.call-to-action-wrapper .header {
+    font-weight: bold;
 }
 
 /* Structure */
@@ -107,24 +113,157 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* min-width: 100vh; */
 }
+
+.section {
+    display: flex;
+    flex: 1 1 0;
+    justify-content: center;
+}
+
+.section .content {
+    flex: auto;
+    display: flex;
+    max-width: 75vw;
+}
+
 /* Header */
+.section01 {
+    display: flex;
+}
+
+.section01 .content {
+    flex-direction: column;
+
+    gap: 2.5vw;
+}
+
 .header-wrapper {
     display: flex;
     flex-direction: row;
-    /* flex: auto; */
 
     justify-content: space-between;
     align-items: center;
-
-    padding: 0 128px;
 }
 
 .header-links {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 
-    gap: 16px;
+    gap: 2.5vw;
+}
+
+/* Hero section */
+.hero-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 64px;
+}
+
+.hero-wrapper .left-column,
+.hero-wrapper .right-column {
+    flex: 1 1 0;
+    display: flex;
+}
+
+.hero-wrapper .left-column {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-wrapper .right-column {
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+/* Information section */
+.section02 .content {
+    display: flex;
+    justify-content: center;
+}
+
+.info-wrapper .header {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .image-placeholder {
+    height: 100px;
+    width: 100px;
+}
+
+.card .subtext {
+    text-align: center;
+}
+
+/* Quote content */
+.section03 .content {
+    display: flex;
+    justify-content: center;
+}
+
+/* Call to action content */
+.section04 .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    gap: 32px;
+
+    justify-content: center;
+    padding: 48px 96px;
+    border-radius: 8px;
+}
+
+.call-to-action-wrapper .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+/* .call-to-action-wrapper .header {
+    font-size
+} */
+
+.call-to-action-wrapper .button-wrapper {
+    /* flex: 0 0 0; */
+    display: flex;
+
+    justify-content: center;
+}
+
+.call-to-action-wrapper button {
+    /* display: flex; */
+    border-color: white;
+    border-style: solid;
+    padding: 0 32px;
+    /* box-shadow: none; */
+}
+
+.footer {
+    text-align: center;
 }

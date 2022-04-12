@@ -107,7 +107,12 @@ body {
     font-weight: bold;
 }
 
-/* Structure */
+.button-wrapper a {
+    text-decoration: none;
+    font-family: "Roboto";
+}
+
+/* -------- Structure -------- */
 .container {
     min-height: 100vh;
     display: flex;
@@ -117,8 +122,10 @@ body {
 
 .section {
     display: flex;
-    flex: 1 1 0;
+    flex: 1 1 auto;
     justify-content: center;
+    min-height: 500px;
+    /* height: 500px; */
 }
 
 .section .content {
@@ -130,12 +137,16 @@ body {
 /* Header */
 .section01 {
     display: flex;
+
+    /* height: 500px; */
 }
 
 .section01 .content {
     flex-direction: column;
 
+    padding-top: 1vw;
     gap: 2.5vw;
+    padding-bottom: 2.5vw;
 }
 
 .header-wrapper {
@@ -163,7 +174,11 @@ body {
 
     justify-content: space-between;
     /* align-items: center; */
-    gap: 64px;
+    gap: 5vw;
+}
+
+.hero-wrapper {
+    margin: auto;
 }
 
 .hero-wrapper .left-column,
@@ -174,13 +189,38 @@ body {
 
 .hero-wrapper .left-column {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2.5vw;
 }
 
 .hero-wrapper .right-column {
     justify-content: center;
     align-items: center;
     background-color: gray;
+}
+
+.hero-wrapper .hero-image {
+    display: flex;
+    height: 480px;
+    width: 848px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-wrapper .button-wrapper {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding: 8px 32px; */
+}
+
+.hero-wrapper .button-wrapper a {
+    /* display: flex; */
+    /* border-color: white; */
+    /* border-style: solid; */
+    color: white;
+    padding: 8px 32px;
+    /* box-shadow: none; */
 }
 
 /* Information section */
@@ -250,17 +290,17 @@ body {
 } */
 
 .call-to-action-wrapper .button-wrapper {
-    /* flex: 0 0 0; */
     display: flex;
 
     justify-content: center;
+    align-items: center;
 }
 
-.call-to-action-wrapper button {
+.call-to-action-wrapper a {
     /* display: flex; */
     border-color: white;
     border-style: solid;
-    padding: 0 32px;
+    padding: 8px 32px;
     /* box-shadow: none; */
 }
 
